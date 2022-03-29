@@ -10,7 +10,7 @@
 
 A \textbf{trail} is a sequence of \textit{distinct} edges such that any consecutive edges are incident to a common vertex. When the sequence visits every edge of a graph, it is called an \textbf{Euler trail}. Following such trail with a pencil would lead us to draw the graph with the specified requirements.
 
-To find if a graph has an Euler trail, however, we need \nameref{thm:euler-circuit}, which is stated in terms of a \textbf{circuit}, that is a trail that ends at the same vertex it started. From there we have \cref{thm:euler-trail}, which won't be proved here, but the main argument behind it is:
+To find if a graph has an Euler trail, however, we need \nameref{thm:euler-circuit}, which is stated in terms of a \textbf{circuit}, that is, a trail that ends at the same vertex it started. From there we have \cref{thm:euler-trail}, which won't be proved here, but the main argument behind it is:
 
 If we connect the two vertices with odd degree by an edge $e := x y$, we get an even graph. Since this new graph has an Euler circuit $W := u W_1 x e y W_2 u$ and the only edge missing is $e$, the trail $T := x W_1 u W_2 y$ still is eulerian for the original graph.
 
@@ -26,8 +26,6 @@ If we connect the two vertices with odd degree by an edge $e := x y$, we get an 
 
 \subsection{Answer} \label{sec:graph-a}
 
-    Finally, by \cref{thm:euler-trail}, we can see that the graph in \cref{fig:graph-a} can be drawn without raising the pencil and without repeating any lines. This is because only $v_2$ and $v_3$ have odd degree ($\deg(v_2) = 3 = \deg(v_3)$).
+    Finally, by \cref{thm:euler-trail}, we can see that the graph in \cref{fig:graph-a} can be drawn without raising the pencil and without repeating any lines. This is because only $\hyperlink{fig:graph-a:v2}{v_2}$ and $\hyperlink{fig:graph-a:v3}{v_3}$ have odd degree ($\deg(\hyperlink{fig:graph-a:v2}{v_2}) = 3 = \deg(\hyperlink{fig:graph-a:v3}{v_3})$).
 
-    Furthermore, considering the argument for \cref{thm:euler-trail}, we must start the drawing at one of the two odd vertices, $v_2$ or $v_3$.
-
-~
+    Furthermore, considering the argument for \cref{thm:euler-trail}, we must start the drawing at one of the two odd vertices, $\hyperlink{fig:graph-a:v2}{v_2}$ or $\hyperlink{fig:graph-a:v3}{v_3}$.
