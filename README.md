@@ -4,4 +4,4 @@ Which of the graphs in the attached figure can be drawn without raising your pen
 
 ![4 Drawable Graphs](images/original.jpg)
 
-<!-- ## [Entrega](entrega.pdf) -->
+## [Entrega](entrega.pdf)
