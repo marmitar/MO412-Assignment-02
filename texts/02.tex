@@ -1,31 +1,19 @@
 \section{Image (b)}
 
-\begin{wrapfigure}{r}{0.5\textwidth}
-    \centering
-    \begin{tikzpicture}[draw=darkgray,text=darkgray, align=center, node distance=3cm]
-        \tikzstyle{every node}=[inner sep=0pt];
+\noindent
+\begin{minipage}[t]{0.49\textwidth}
 
-        \node (v5) [label=above right:{\Large $v_5$}] {};
-        \node (v1) [label=above:{\Large $v_1$}, above of = v5] {};
-        \node (v2) [label=left:{\Large $v_2$}, left of = v5] {};
-        \node (v3) [label=right:{\Large $v_3$}, right of = v5] {};
-        \node (v4) [label=below:{\Large $v_4$}, below of = v5] {};
+    For \cref{fig:graph-b}, we have nodes $v_1$, $v_2$, $v_3$ and $v_4$ with degree odd ($\deg(v_i) = 3$ for $i = 1$, $2$, $3$ and $4$), therefore the graph does \textbf{not} have an Euler trail and cannot be drawn without raising the pencil or repeating a line.
 
-        \path (v1.center)
-            edge (v2.center)
-            edge (v3.center);
-        \path (v4.center)
-            edge (v2.center)
-            edge (v3.center);
-        \path (v5.center)
-            edge (v1.center)
-            edge (v2.center)
-            edge (v3.center)
-            edge (v4.center);
-    \end{tikzpicture}
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
 
-    \caption{Image \texttt{b.} with labelled nodes.}
-    \label{fig:graph-b}
-\end{wrapfigure}
+    \begin{figure}[H]
+        \centering
+        \input{images/graph-b}
 
-For \cref{fig:graph-b}, we have nodes $v_1$, $v_2$, $v_3$ and $v_4$ with degree odd ($\deg(v_i) = 3$ for $i = 1$, $2$, $3$ and $4$), therefore the graph does \textbf{not} have an Euler trail and cannot be drawn without raising the pencil or repeating a line.
+        \caption{Image \texttt{b.} with labelled nodes.}
+        \label{fig:graph-b}
+    \end{figure}
+
+\end{minipage}
