@@ -1,0 +1,32 @@
+\section{Image (d)}
+
+\begin{table}[H]
+    \caption{Degrees of each vertex of \cref{fig:graph-d}.}
+    \label{tab:graph-d}
+
+    \centering
+    \begin{tabular}{ccc}
+        \toprule
+        \toprule
+            Vertex & Degree & Is Odd? \\
+        \midrule
+            $v_1$ & 2 & --- \\
+            $v_2$ & 2 & --- \\
+            $v_3$ & 6 & --- \\
+            $v_4$ & 6 & --- \\
+            $v_5$ & 3 & Yes \\
+            $v_6$ & 1 & Yes \\
+        \bottomrule
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+    \centering
+    \input{images/graph-d}
+
+    \caption{Image \texttt{d.} with labelled nodes.}
+    \label{fig:graph-d}
+\end{wrapfigure}
+
+Just like with \hyperref[sec:graph-a]{image (a)}, we have exactly two odd vertices, $v_5$ and $v_6$, in this case. By \cref{thm:euler-trail}, this proves the graph can be drawn as required. As before, both vertices can be used as the starting point for the drawing.

@@ -1,0 +1,23 @@
+\begin{tikzpicture}[draw=darkgray, text=darkgray, align=center, xscale=1, yscale=2, scale=2]
+    \tikzstyle{every node}=[inner sep=0pt];
+
+    \node at ( 0.0, 1) (v1) [label=above:{\Large $v_1$}] {};
+    \node at (-1.5, 0) (v2) [label=below left:{\Large $v_2$}] {};
+    \node at (-0.5, 0) (v3) [label=below left:{\Large $v_3$}] {};
+    \node at ( 0.0, 0) (vc) {};
+    \node at ( 0.5, 0) (v4) [label=below right:{\Large $v_4$}] {};
+    \node at ( 1.5, 0) (v5) [label=right:{\Large $v_5$}] {};
+    \node at ( 1.5, -0.7) (v6) [label=below:{\Large $v_6$}] {};
+
+    \draw (v1.center)
+        edge (v2.center);
+    \draw (v3.center)
+        edge (v2.center)
+        edge (v4.center);
+    \draw (v5.center)
+        edge (v1.center)
+        edge (v4.center)
+        edge (v6.center);
+    \draw (vc.center) ellipse (0.5 and 0.8);
+    \draw (vc.center) ellipse (0.5 and 0.5);
+\end{tikzpicture}
