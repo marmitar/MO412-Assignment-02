@@ -50,6 +50,24 @@
 \RequirePackage{xcolor} % for colored text (comments in algorithms)
 \RequirePackage{trimspaces, xstring} % for multiple author parsing
 \RequirePackage[bottom]{footmisc}
+\RequirePackage[hidelinks]{hyperref}
+
+% problemas com o ambiente 'proof' do thmbox
+\LetLtxMacro\ams@proof\proof
+\LetLtxMacro\ams@end@proof\endproof
+
+\RequirePackage{thmtools}
+\RequirePackage{framed}
+
+\AtBeginDocument{%
+    \LetLtxMacro\proof\ams@proof
+    \LetLtxMacro\endproof\ams@end@proof
+}
+
+\let\leftbar\@undefined
+\let\endleftbar\@undefined
+\declaretheorem[thmbox=M]{theorem}
+\declaretheorem[thmbox=M, numberlike=theorem]{proposition}
 
 % look for figures in the figures directory
 % \graphicspath{{figures/}}
