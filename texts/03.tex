@@ -1,0 +1,23 @@
+\section{Image (c)}
+
+\noindent
+\begin{minipage}[t]{0.6\textwidth}
+
+    \begin{figure}[H]
+        \centering
+        \input{images/graph-c}
+
+        \caption{Image \texttt{c.} with labelled nodes.}
+        \label{fig:graph-c}
+    \end{figure}
+
+\end{minipage}%
+\begin{minipage}[t]{0.39\textwidth}
+
+    Note that every outer vertex here ($v_1, \ldots, v_6$) has degree 2 and every inner node ($v_7, \ldots, v_{12}$) has degree 4 therefore, by \nameref{thm:euler-circuit}, there is an Euler circuit and the graph can be drawn as described.
+
+    ~
+
+    \indent Since a circuit is just a collection of cycles, we can start the eulerian trail from any vertex and we will stop at the same vertex. In fact, we can start at any point in the drawing, not only the labelled vertices, by just creating a vertex there with degree two.
+
+\end{minipage}
